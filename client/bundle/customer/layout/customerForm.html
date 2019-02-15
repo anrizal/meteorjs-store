@@ -1,0 +1,44 @@
+<!-- 
+/*
+ * Customer Form Layout
+ * 
+ * file: /client/customerPage/layout/customerForm.html
+ */
+--> 
+<template name="customerForm">
+  <div class="customerPage page">
+    <div class="customerForm">
+      <form action="#" id="{{customerID}}">
+        <!-- Customer Name -->
+        <h5>Customers Name</h5>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="customer_name" type="text" length="20" value="{{customerName.value}}">
+            <label class="{{customerName.class}}" for="customer_name">Customer Name</label>
+          </div>
+        </div>
+        <!-- Customer Address -->
+        <h5>Customers Address </h5>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="customer_address" type="text" length="20" value="{{customerAddress.value}}">
+            <label class="{{customerAddress.class}}" for="customer_address">Customer address</label>
+          </div>
+        </div>
+        <!-- Customer Phone -->
+        <h5>Customers Phone </h5>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="customer_phone" type="text" length="20" value="{{customerPhone.value}}">
+                <label class="{{customerPhone.class}}" for="customer_phone">Customer Phone</label>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="row">
+          <p>{{customerData.groups}}</p>
+          <a id="saveCustomerBtn_{{customerID}}" class="btn waves-effect waves-light saveCustomerBtn">Save Customer</a>
+        </div>
+      </form>
+    </div>
+  </div>  
+</template>

@@ -1,0 +1,20 @@
+<!-- 
+/*
+ * Navigation Layout
+ * 
+ * file: /client/main/layout/nav.html
+ */
+-->
+<template name="nav">
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        {{#if currentUser}}
+          <li><a class="waves-effect waves-light" href="/product">Product Page</a></li>
+          <li><a class="waves-effect waves-light" href="/customer">Customer Page</a></li>
+          <li><a class="waves-effect waves-light" href="/order">Order Page</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+</template>

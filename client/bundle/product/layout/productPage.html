@@ -1,0 +1,16 @@
+<!-- 
+/*
+ * Product Page Layout
+ * 
+ * file: /client/productPage/layout/productPage.html
+ */
+--> 
+<template name="productPage">
+  <div class="productPage page">
+    <div class="addLink">
+      <a href="/product/addproduct" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
+      <span class="red-text lighten-1 h5 label"><a href="/product/addproduct">Add New</a></span>
+    </div>
+    {{> productList}}   
+  </div>
+</template>

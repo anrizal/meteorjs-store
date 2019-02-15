@@ -1,0 +1,44 @@
+<!-- 
+/*
+ * Product Form Layout
+ * 
+ * file: /client/productPage/layout/productForm.html
+ */
+--> 
+<template name="productForm">
+  <div class="productPage page">
+    <div class="productForm">
+      <form action="#" id="{{productID}}">
+        <!-- Product Name -->
+        <h5>Products Name</h5>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="product_name" type="text" length="20" value="{{productName.value}}">
+            <label class="{{productName.class}}" for="product_name">Product Name</label>
+          </div>
+        </div>
+        <!-- Product Address -->
+        <h5>Products Address </h5>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="product_color" type="text" length="20" value="{{productColor.value}}">
+            <label class="{{productColor.class}}" for="product_color">Product color</label>
+          </div>
+        </div>
+        <!-- Product Stock -->
+        <h5>Products Stock </h5>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="product_stock" type="text" length="20" value="{{productStock.value}}">
+                <label class="{{productStock.class}}" for="product_stock">Product Stock</label>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="row">
+          <p>{{productData.groups}}</p>
+          <a id="saveProductBtn_{{productID}}" class="btn waves-effect waves-light saveProductBtn">Save Product</a>
+        </div>
+      </form>
+    </div>
+  </div>  
+</template>

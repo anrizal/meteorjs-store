@@ -1,0 +1,21 @@
+.content {
+  margin-left: 300px;
+  width: 1920px;
+}
+
+.addLink{
+  margin: 0 0 2rem 2rem;
+  .label {
+    margin-left: 2rem;
+  }
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

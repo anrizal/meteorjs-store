@@ -1,0 +1,14 @@
+<!-- 
+/*
+ * Content Layout
+ * 
+ * file: /client/main/layout/content.html
+ */
+-->
+<template name="content">
+  {{#if currentUser}}
+  <div id="content" class="content clearfix">
+    {{> loggedIn}}
+  </div>
+  {{/if}}
+</template>

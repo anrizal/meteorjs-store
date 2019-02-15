@@ -1,0 +1,16 @@
+<!-- 
+/*
+ * Order Page Layout
+ * 
+ * file: /client/orderPage/layout/orderPage.html
+ */
+--> 
+<template name="orderPage">
+  <div class="orderPage page">
+    <div class="addLink">
+      <a href="/order/addorder" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
+      <span class="red-text lighten-1 h5 label"><a href="/order/addorder">Add New</a></span>
+    </div>
+    {{> orderList}}   
+  </div>
+</template>

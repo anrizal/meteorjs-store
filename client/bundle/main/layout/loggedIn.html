@@ -1,0 +1,11 @@
+<!-- file: /client/layout/loggedIn.html --> 
+<template name="loggedIn">
+  <div id="admin" class="admin">
+    {{#if currentUser}}
+    <div class="card-panel blue">
+      <p class="white-text">You've been logged in</p>
+      <a class="teal-text chip z-depth-1 waves-effect waves-light logout" href="{{casLogout}}">Logout</a>
+    </div>  
+    {{/if}}
+  </div>
+</template>

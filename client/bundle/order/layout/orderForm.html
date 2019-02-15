@@ -1,0 +1,46 @@
+<!-- 
+/*
+ * Order Form Layout
+ * 
+ * file: /client/orderPage/layout/orderForm.html
+ */
+--> 
+<template name="orderForm">
+  <div class="orderPage page">
+    <div class="orderForm">
+      <form action="#" id="{{orderID}}">
+        <!-- Product Name -->
+        <h5>Product Name</h5>
+          <div class="row">
+              <select name="product_name" class="browser-default col s12">
+                  {{#each prodNameSelect}}
+                      <option value="{{pnVal}}" disabled="{{disabled}}" selected="{{selected}}">{{pnLabel}}</option>
+                  {{/each}}
+              </select>
+          </div>
+        <!-- Customer Name -->
+        <h5>Customer Name</h5>
+          <div class="row">
+              <select name="customer_name" class="browser-default col s12">
+                  {{#each custNameSelect}}
+                      <option value="{{cnVal}}" disabled="{{disabled}}" selected="{{selected}}">{{cnLabel}}</option>
+                  {{/each}}
+              </select>
+          </div>
+        <!-- Quantity -->
+        <h5>Quantity </h5>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="quantity" type="text" length="20" value="{{quantity.value}}">
+                <label class="{{quantity.class}}" for="quantity">Quantity</label>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="row">
+          <p>{{orderData.groups}}</p>
+          <a id="saveOrderBtn_{{orderID}}" class="btn waves-effect waves-light saveOrderBtn">Save Order</a>
+        </div>
+      </form>
+    </div>
+  </div>  
+</template>

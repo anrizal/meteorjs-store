@@ -1,0 +1,22 @@
+<!-- 
+/*
+ * Main Layout
+ * 
+ * file: /client/main/layout/main.html
+ */
+-->
+<head>
+  <title>Admin Page</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+<template name="main">
+  {{> nav}}
+  {{#if currentUser}}
+    {{> Template.dynamic template=header}}
+    {{> Template.dynamic template=content}}
+  {{else}}
+      {{> loginButtons}}
+  {{/if}}
+  {{> footer}}
+</template>  

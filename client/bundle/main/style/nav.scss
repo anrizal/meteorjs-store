@@ -1,0 +1,20 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  ul {
+    width: 100%;
+  }
+  li:last-child {
+    float: right;
+    margin-right: 15px;
+  }
+}
+.smaller-nav {
+  height: 30px;
+  line-height: 30px;
+}
+.smaller-logout {
+  height: 24px;
+  line-height: 24px;
+}

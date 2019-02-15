@@ -1,0 +1,45 @@
+<!-- 
+/*
+ * Order List Layout
+ * 
+ * file: /client/orderPage/layout/orderList.html
+ */
+--> 
+<template name="orderList">
+  <table id="orderList">
+    <thead>
+      <tr>
+        <th>Order Id</th>
+        <th>Product</th>
+        <th>Customer</th>
+        <th>Quantity</th>
+        <th>Date</th>
+        <th class="widget-delete-col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each getOrders}}
+      <tr>
+        <td>
+          <a href='/order/editorder/{{order_id}}' class="list-sitename">{{order_id}}</a>
+        </td>
+        <td>
+          {{productData.product_name}}
+        </td>
+        <td>
+          {{customerData.customer_name}}
+        </td>
+        <td>
+           {{quantity}}
+        </td>
+        <td>
+           {{createdAt}}
+        </td>
+        <td class="delete-button">
+          <a href='/order/delorder/{{order_id}}'>Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

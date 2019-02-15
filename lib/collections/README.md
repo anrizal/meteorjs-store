@@ -1,0 +1,1 @@
+This will create Mongo collection both in client (browser) and server

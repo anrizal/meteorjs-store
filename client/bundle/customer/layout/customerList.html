@@ -1,0 +1,45 @@
+<!-- 
+/*
+ * Customer List Layout
+ * 
+ * file: /client/customerPage/layout/customerList.html
+ */
+--> 
+<template name="customerList">
+  <table id="customerList">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Created At</th>
+        <th class="widget-delete-col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each getCustomers}}
+      <tr>
+        <td>
+          <a href='/customer/editcustomer/{{customer_id}}' class="list-sitename">{{customer_id}}</a>
+        </td>
+        <td>
+            {{customer_name}}
+        </td>
+        <td>
+          {{customer_address}}
+        </td>
+        <td>
+            {{customer_phone}}
+        </td>
+        <td>
+            {{createdAt}}
+        </td>
+        <td class="delete-button">
+          <a href='/customer/delcustomer/{{customer_id}}'>Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

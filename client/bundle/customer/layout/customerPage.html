@@ -1,0 +1,16 @@
+<!-- 
+/*
+ * Customer Page Layout
+ * 
+ * file: /client/customerPage/layout/customerPage.html
+ */
+--> 
+<template name="customerPage">
+  <div class="customerPage page">
+    <div class="addLink">
+      <a href="/customer/addcustomer" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
+      <span class="red-text lighten-1 h5 label"><a href="/customer/addcustomer">Add New</a></span>
+    </div>
+    {{> customerList}}   
+  </div>
+</template>

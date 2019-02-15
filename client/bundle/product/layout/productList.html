@@ -1,0 +1,45 @@
+<!-- 
+/*
+ * Product List Layout
+ * 
+ * file: /client/productPage/layout/productList.html
+ */
+--> 
+<template name="productList">
+  <table id="productList">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Stock</th>
+        <th>Updated At</th>
+        <th class="widget-delete-col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each getProducts}}
+      <tr>
+        <td>
+          <a href='/product/editproduct/{{product_id}}' class="list-sitename">{{product_id}}</a>
+        </td>
+        <td>
+           {{product_name}}
+        </td>
+        <td>
+          {{product_color}}
+        </td>
+        <td>
+            {{product_stock}}
+        </td>
+        <td>
+            {{createdAt}}
+        </td>
+        <td class="delete-button">
+          <a href='/product/delproduct/{{product_id}}'>Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
